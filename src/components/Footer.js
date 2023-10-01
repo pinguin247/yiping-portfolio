@@ -9,13 +9,21 @@ function Footer() {
   return (
     <div className='footer'>
         <div className="socialMedia">
-            <InstagramIcon />
-            <TwitterIcon />            
-            <GithubIcon />
-            <LinkedInIcon />
+            <a href="https://www.instagram.com/pingz247/">
+                <InstagramIcon />
+            </a>
+            <a href="https://twitter.com/pingz247">
+                <TwitterIcon />
+            </a>
+            <a href="https://github.com/pinguin247">
+                <GithubIcon />
+            </a>            
+            <a href="https://www.linkedin.com/in/gao-yiping/">
+                <LinkedInIcon />
+            </a>          
 
         </div>
-        <p> &copy; 2023 yipingportfolio.com</p>
+        <p> &copy; 2023 pinguin247.github.io/yiping-portfolio/</p>
     </div>
   )
 }

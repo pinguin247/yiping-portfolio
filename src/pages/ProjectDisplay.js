@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { ProjectList } from "../helpers/ProjectList";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import YoutubeIcon from "@material-ui/icons/YouTube";
 import "../styles/ProjectDisplay.css";
 
 function ProjectDisplay() {
@@ -14,7 +15,9 @@ function ProjectDisplay() {
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      <GitHubIcon />
+      <a href={project.github}>
+        <GitHubIcon />
+      </a>
     </div>
   );
 }

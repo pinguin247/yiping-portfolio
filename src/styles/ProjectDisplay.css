@@ -1,6 +1,5 @@
 .project {
     width: 100%;
-    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,9 +12,9 @@
     font-size: 35px;
   }
   .project img {
-    width: 700px;
+    width: 550px;
     border-radius: 10px;
-    height:50%
+    height:700px
   }
   
   .project p {

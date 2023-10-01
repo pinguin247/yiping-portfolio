@@ -13,64 +13,113 @@ function Experience() {
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2010 - 2014"
+          date="2018-2019"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            My Random High School, Random Place, Random State
+            Hwa Chong Institution, Singapore
           </h3>
-          <p> High School Diploma</p>
+          <h4 className="vertical-timeline-element-subtitle">
+            A-Level Certificate
+          </h4>
+          <p>Distinction in H2 Maths and H2 Economics</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2014 - 2018"
+          date="2020-2024"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            My Cool University, Vancouver, British Columbia
+            Nanyang Technological University, Singapore
           </h3>
 
           <h4 className="vertical-timeline-element-subtitle">
-            Bachelor's Degree
+            Double Bachelor's Degree
           </h4>
 
-          <p> Computer Science</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2018 - 2020"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Back End Engineer - Google
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>Developed the backend infrastructure for 3 projects.</p>
+          <p> Business and Computer Science, Business Analytics</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2020 - present"
+          date="May 2022 - July 2022"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Full Stack Engineer - Twitch
+            Full Stack Web Developer Intern
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+            Aspri Group PTE. LTD. , Singapore
           </h4>
           <p>
-            Helped the team launch 2 major features by working both in the front
-            end and back end.
+            Built a Corporate Service Web Portal from scratch using C#, Blazor WASM, and MySQL in a team of 3 for client and staff use.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Dec 2022 - Jan 2023"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Frontend Web Developer Intern
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            InApps Tecchnology, Ho Chi Minh City, Vietnam
+          </h4>
+          <p>
+           Frontend implementation of UI Design
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Feb 2023 - Mar 2023"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Software Engineer Intern
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Ultra Clean Technology, Singapore
+          </h4>
+          <p>
+           Front End implementation of web pages and UI improvements
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="Apr - June 2023"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Drexel University, United States, Pennsylvania
+          </h3>
+
+          <p> Semester Exchange Program</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Aug 2023 - Current"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Product Manager Intern
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Shopee, Singapore
+          </h4>
+          <p>
+          Support data product features UAT and review internal data products
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
+      
     </div>
   );
 }

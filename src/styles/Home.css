@@ -24,6 +24,19 @@
     height: 50px;
   }
   
+  .about .icon-container{
+    width: 300px; /* Set the width of the icon container */
+    height: 300px; /* Set the height of the icon container */
+    overflow: hidden; /* Hide any image overflow */
+    border-radius: 300px;
+  }
+
+  .about .icon {
+    width: 100%; /* Make the image width 100% of its container */
+    height: 100%; /* Make the image height 100% of its container */
+    object-fit: cover; /* Crop the image to cover the container */
+  }
+  
   .about .prompt {
     width: 40%;
     font-size: 30px;
