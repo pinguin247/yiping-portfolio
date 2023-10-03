@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yipinggao.com/static/css/main.c38d552c.css",
-    "main.js": "/yipinggao.com/static/js/main.c4b4c7b6.js",
+    "main.js": "/yipinggao.com/static/js/main.b5f027ec.js",
     "static/js/787.1fd329e9.chunk.js": "/yipinggao.com/static/js/787.1fd329e9.chunk.js",
     "static/media/image1.png": "/yipinggao.com/static/media/image1.d9b413c960ce840fea8a.png",
     "static/media/profilepic.jpg": "/yipinggao.com/static/media/profilepic.fb5521be675c4c79e992.jpg",
@@ -10,11 +10,11 @@
     "static/media/image4.png": "/yipinggao.com/static/media/image4.ae72e8e9a76bdbeffe13.png",
     "index.html": "/yipinggao.com/index.html",
     "main.c38d552c.css.map": "/yipinggao.com/static/css/main.c38d552c.css.map",
-    "main.c4b4c7b6.js.map": "/yipinggao.com/static/js/main.c4b4c7b6.js.map",
+    "main.b5f027ec.js.map": "/yipinggao.com/static/js/main.b5f027ec.js.map",
     "787.1fd329e9.chunk.js.map": "/yipinggao.com/static/js/787.1fd329e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c38d552c.css",
-    "static/js/main.c4b4c7b6.js"
+    "static/js/main.b5f027ec.js"
   ]
 }
