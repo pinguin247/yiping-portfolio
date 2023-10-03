@@ -13,10 +13,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/yiping-portfolio" element={<Home />} />
-          <Route path="/yiping-portfolio/projects" element={<Projects />} />
-          <Route path="/yiping-portfolio/project/:id" element={<ProjectDisplay />} />
-          <Route path="/yiping-portfolio/experience" element={<Experience />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectDisplay />} />
+          <Route path="/experience" element={<Experience />} />
         </Routes>
         <Footer />
       </Router>
