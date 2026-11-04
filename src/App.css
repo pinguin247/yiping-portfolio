@@ -396,6 +396,7 @@ img {
 .impact-strip {
   border-block: 1px solid var(--ink);
   background: var(--lime);
+  color: var(--ink-dark);
 }
 
 .impact-grid {
