@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
-import profileImage from "../assets/profilepic.jpg";
+import profileImage from "../assets/updatedprofile.jpg";
 
 const impact = [
   { value: "78–90 sec", label: "deployment transfer", context: "down from 2–3 hours" },
@@ -113,7 +113,7 @@ function Home() {
 
         <div className="portrait-wrap">
           <div className="portrait-frame">
-            <img src={profileImage} alt="Gao Yiping in Yosemite National Park" />
+            <img src={profileImage} alt="Gao Yiping smiling by the waterfront" />
           </div>
           <div className="portrait-note note-top">backend<br />engineering</div>
           <div className="portrait-note note-bottom">AI / LLM<br />applications</div>
