@@ -1,31 +1,28 @@
-import React from 'react';
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GithubIcon from "@material-ui/icons/GitHub";
-import "../styles/Footer.css"
-
 function Footer() {
   return (
-    <div className='footer'>
-        <div className="socialMedia">
-            <a href="https://www.instagram.com/pingz247/">
-                <InstagramIcon />
-            </a>
-            <a href="https://twitter.com/pingz247">
-                <TwitterIcon />
-            </a>
-            <a href="https://github.com/pinguin247">
-                <GithubIcon />
-            </a>            
-            <a href="https://www.linkedin.com/in/gao-yiping/">
-                <LinkedInIcon />
-            </a>          
-
+    <footer className="site-footer">
+      <div className="footer-grid">
+        <div>
+          <p className="footer-kicker">Thanks for stopping by.</p>
+          <h2>Let’s build something dependable.</h2>
         </div>
-        <p> &copy; 2023 pinguin247.github.io/yiping-portfolio/</p>
-    </div>
-  )
+
+        <div className="footer-contact">
+          <a href="mailto:gaoyiping1012@gmail.com">gaoyiping1012@gmail.com <span>↗</span></a>
+          <p>Singapore · GMT+8</p>
+        </div>
+      </div>
+
+      <div className="footer-base">
+        <p>© 2026 Gao Yiping</p>
+        <div>
+          <a href="https://www.linkedin.com/in/gao-yiping/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/pinguin247" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

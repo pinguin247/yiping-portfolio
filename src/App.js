@@ -1,26 +1,49 @@
+import { useEffect } from "react";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Experience from "./pages/Experience";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 import ProjectDisplay from "./pages/ProjectDisplay";
+import Projects from "./pages/Projects";
+
+function RouteEffects() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    document.body.classList.remove("menu-open");
+
+    if (hash) {
+      window.requestAnimationFrame(() => {
+        document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
+      });
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [pathname, hash]);
+
+  return null;
+}
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <BrowserRouter>
+      <RouteEffects />
+      <div className="site-frame">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/project/:id" element={<ProjectDisplay />} />
-          <Route path="/experience" element={<Experience />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:id" element={<ProjectDisplay />} />
+            <Route path="/project/:id" element={<Navigate to="/projects/fitbuddy" replace />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </main>
         <Footer />
-      </Router>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

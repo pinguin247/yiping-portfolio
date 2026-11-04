@@ -1,20 +1,25 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
 
-import "../styles/Projects.css";
-
 function Projects() {
   return (
-    <div className="projects">
-      <h1> My Past Projects</h1>
-      <div className="projectList">
-        {ProjectList.map((project, idx) => {
-          return (
-            <ProjectItem id={idx} name={project.name} image={project.image} />
-          );
-        })}
-      </div>
+    <div className="inner-page" id="top">
+      <header className="inner-hero">
+        <Link className="back-link" to="/">← Home</Link>
+        <p className="section-label">Selected work · 2023–2024</p>
+        <h1>Projects where software meets people.</h1>
+        <p className="inner-intro">
+          Applied AI, mobile products, and systems thinking—documented with the problem,
+          architecture, individual contribution, and honest constraints.
+        </p>
+      </header>
+
+      <section className="projects-stack" aria-label="Project case studies">
+        {ProjectList.map((project, index) => (
+          <ProjectItem key={project.id} project={project} featured={index === 0} />
+        ))}
+      </section>
     </div>
   );
 }
