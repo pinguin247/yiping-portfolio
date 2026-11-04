@@ -8,7 +8,7 @@ function Footer() {
         </div>
 
         <div className="footer-contact">
-          <a href="mailto:gaoyiping1012@gmail.com">gaoyiping1012@gmail.com <span>↗</span></a>
+          <a href="mailto:yiping247@gmail.com">yiping247@gmail.com <span>↗</span></a>
           <p>Singapore · GMT+8</p>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ProjectItem from "../components/ProjectItem";
+import SocialLinks from "../components/SocialLinks";
 import { ProjectList } from "../helpers/ProjectList";
 import profileImage from "../assets/updatedprofile.jpg";
 
@@ -107,8 +108,9 @@ function Home() {
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="#work">Explore my work <span>↓</span></a>
-            <a className="button button-text" href="mailto:gaoyiping1012@gmail.com">Email me <span>↗</span></a>
+            <a className="button button-text" href="mailto:yiping247@gmail.com">Email me <span>↗</span></a>
           </div>
+          <SocialLinks />
         </div>
 
         <div className="portrait-wrap">
@@ -285,7 +287,7 @@ function Home() {
         <p className="section-label">06 · Contact</p>
         <div>
           <h2>Have an interesting engineering problem?</h2>
-          <a href="mailto:gaoyiping1012@gmail.com">Tell me about it <span>↗</span></a>
+          <a href="mailto:yiping247@gmail.com">Tell me about it <span>↗</span></a>
         </div>
         <p>I’m always happy to connect with engineers, builders, and teams working on meaningful systems.</p>
       </section>

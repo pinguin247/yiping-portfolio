@@ -116,7 +116,7 @@ function ProjectDisplay() {
 
       <nav className="case-pagination" aria-label="Project navigation">
         <Link to="/projects">View all projects</Link>
-        <a href="mailto:gaoyiping1012@gmail.com">Discuss this work ↗</a>
+        <a href="mailto:yiping247@gmail.com">Discuss this work ↗</a>
       </nav>
     </article>
   );

@@ -28,7 +28,9 @@ function Navbar() {
     <header className="site-header">
       <div className="nav-shell">
         <Link className="wordmark" to="/" aria-label="Gao Yiping, home" onClick={closeMenu}>
-          <span className="wordmark-symbol">GY</span>
+          <span className="wordmark-symbol" aria-hidden="true">
+            <img src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="" />
+          </span>
           <span className="wordmark-name">Gao Yiping</span>
         </Link>
 
@@ -47,7 +49,7 @@ function Navbar() {
           {navItems.map(([label, anchor]) => (
             <a key={anchor} href={`/#${anchor}`} onClick={closeMenu}>{label}</a>
           ))}
-          <a className="nav-contact" href="mailto:gaoyiping1012@gmail.com" onClick={closeMenu}>
+          <a className="nav-contact" href="mailto:yiping247@gmail.com" onClick={closeMenu}>
             Let’s talk <span aria-hidden="true">↗</span>
           </a>
         </nav>

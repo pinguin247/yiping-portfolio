@@ -13,8 +13,8 @@ const contactDetails = [
   },
   {
     title: "Email",
-    value: "gaoyiping1012@gmail.com",
-    href: "mailto:gaoyiping1012@gmail.com",
+    value: "yiping247@gmail.com",
+    href: "mailto:yiping247@gmail.com",
   },
   {
     title: "Location",
