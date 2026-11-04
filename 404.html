@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gao Yiping</title>
+    <script>
+      var locationData = window.location;
+      locationData.replace(
+        locationData.protocol + "//" + locationData.hostname +
+        (locationData.port ? ":" + locationData.port : "") +
+        "/?/" + locationData.pathname.slice(1).replace(/&/g, "~and~") +
+        (locationData.search ? "&" + locationData.search.slice(1).replace(/&/g, "~and~") : "") +
+        locationData.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
